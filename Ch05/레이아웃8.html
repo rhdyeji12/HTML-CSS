@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃8</title>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul,ol{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #container{
+        width: 860px;
+        height: auto;
+        border: 1px solid black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #fff;
+        margin: 10px auto;
+    }
+    header{
+        width: 100%;
+        height: 120px;
+        border: 1px dashed black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #eee;
+        position: relative;
+    }
+    
+    header>nav{
+        /*좌표를 이용하여 nav 아래로 내리는 코드*/
+        position: absolute;/*x와 y좌표*/
+        left: 10px;/*패딩포함한 x와 y좌표*/
+        bottom: 10px;
+        right: 10px;
+        width: auto;
+
+        height: 50px;
+        border: 1px dashed black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #ddd;
+
+    }
+    main{
+        width: 100%;
+        height: auto;
+        border: 1px dashed black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #eee;
+        margin: 10px 0;
+
+    }
+
+    main>.flexbox{
+        display: flex;
+        margin-top: 10px;
+
+    }
+    main>.flexbox>aside{
+        width: 198px;
+        height: auto;
+        border: 1px dashed black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #eee;
+        
+    }
+    main>.flexbox>section{
+        width:400px ;
+        height: auto ;
+        border: 1px dashed black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #eee;
+        margin: 0 10px;
+        
+    }
+    main>.flexbox>section>article{
+        width:100%;
+        height: 168px ;
+        border: 1px dashed black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #eee;
+        margin-top: 10px;
+        
+    }
+    main>nav{
+        width: 100%;
+        margin-top: 10px;
+        height: 50px;
+        border: 1px dashed black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #ddd;
+
+    }
+   
+    footer{
+        
+        width: 100%;
+        height: 100px;
+        border: 1px dashed black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #eee;
+    
+    }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            header
+            <nav>nav</nav>
+        </header>
+        <main>
+            main
+            <nav>nav</nav>
+            <div class="flexbox">
+                <aside>aside #1</aside>
+                <section>
+                    section
+                    <article>article #1</article>
+                    <article>article #2</article>
+                </section>
+                <aside>aside #2</aside>
+            </div>
+        </main>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>
