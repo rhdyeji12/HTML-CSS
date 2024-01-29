@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+  </head>
+  <body>
+    <h1>레드향 주문하기</h1>
+    <form>
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p><b>주문할 상품을 선택해주세요.</b></p>
+      <ul>
+        <li>
+          <label for="chaecked" value"s_3">선물용 3kg</label>
+          <input type="number" min="0" max="5">개 (최대 5개)
+        </li>
+        <li>
+          <label for="chaecked" value"s_5">선물용 5kg</label>
+          <input type="number" min="0" max="3" value="1">개 (최대 3개)
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="chaecked" value"f_3">가정용 3kg</label>
+          <input type="number" min="0" max="5">개 (최대 5개)
+        </li>
+        <li>
+          <label for="chaecked" value"f_5">가정용 5kg</label>
+          <input type="number" min="0" max="3" value="1">개 (최대 3개)
+        </li>
+      </ul>
+      <p><b>포장 선택</b></p>
+      <ul id="shipping">
+        <li>
+          <label for="user-name">이름</label>
+          <input type="text" id="user-name">
+        </li>
+        <li>
+          <label for="addr">배송</label>
+          <input type="text" id="addr">
+        </li>
+        <li>
+          <label for="mail">이메일</label>
+          <input type="email" id="mail">
+        </li>
+        <li>
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone">
+        </li>
+      </ul>
+    </fieldset>
+    <div>
+      <input type="submit" value="주문하기 ">
+      <input type="reset" value="취소하기 ">
+    </div>
+  </form>
+</body>
+</html>
